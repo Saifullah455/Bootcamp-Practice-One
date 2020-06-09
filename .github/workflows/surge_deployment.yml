@@ -26,6 +26,6 @@ jobs:
       with:
         node-version: 12
     - name: Install Surge
-      run: install npm -g surge
+      run: npm install -g surge
     - name: Run Surge
       run: surge ./ practice-one-app.surge.sh --token ${{secrets.SURGE_TOKEN}}
